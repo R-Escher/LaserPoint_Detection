@@ -22,6 +22,7 @@ while(cap.isOpened()):
     kernel = np.ones((3, 3), np.uint8)
     resultRed = cv2.erode(resultRed, kernel, iterations = 1)
     resultRed = cv2.dilate(resultRed, kernel, iterations = 2) 
+    print(type(resultRed))
 
 
     ############# PUTS COORDS OF LASER POINT ON SCREEN FRAME #############################
