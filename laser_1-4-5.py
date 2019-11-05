@@ -32,8 +32,9 @@ def centroid(channel, frame):
     return frame
 
 
-
+################# CHOOSE VIDEOS ######################
 cap = cv2.VideoCapture('laser2.mp4')
+######################################################
 
 while(cap.isOpened()):
     ret, frame = cap.read()
